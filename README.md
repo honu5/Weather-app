@@ -16,3 +16,6 @@ weather-app/
 ├── index.js 
 ├── package.json 
 └── .gitignore
+
+![Screenshot 2025-06-21 115229](https://github.com/user-attachments/assets/b19612da-563e-44de-a9a4-3ec208fdcb14)
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container1">
+    
+    <div class="container">
+    <% if (locals.content){ %>
+    <h1> Now <%= content.city%> have
+     Temperature of <%= content.temp %> °C 
+     with  <%= content.description %></h1>
+    <% } else { %>
+    <h1><%= weather %></h1>
+    <% } %>
+
+
+    </div>
+    
+   
+    <div class="container3">
+    <form action="/submit" method="post">
+        <input type="text" name="city" placeholder="Enter city" required><br><br>
+        <button class="btn" type="submit">Get Weather</button>
+    </form>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Weather App</p>
+        <p>Created by <span id="author">Lirans</span> <a href="portfolio">GitHub</a></p>
+    </footer>
+    
+</body>
+</html>
